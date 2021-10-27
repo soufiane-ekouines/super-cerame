@@ -1,0 +1,204 @@
+$back_color:#CED4DA; 
+$back_color1:#ecebf0bb;
+$primary_color:#28272c;
+$secondery_color:#394959;
+$primary_font: 'Montserrat' , 'poppins' , Arial,;
+$primary_shadow:10px 10px 10px rgba(46, 54, 68, .02);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $back_color1;
+    font-size: $primary_font;
+   
+  
+}
+.container{
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 0 5px; 
+    overflow-x: hidden; 
+}
+//header
+#showcase{
+    height: 90px;
+    z-index: -1;
+}
+#showcase-header{ 
+    background-color: $back_color;
+    padding: 10px 10px;
+   position: fixed;
+   width: 100%;
+   
+    .container{
+        max-width: 98%;
+        margin: 0 auto;
+        padding: 0 5px;
+       display: flex;
+        align-items: center;
+       justify-content: space-between;
+       
+        .logo{
+            width: 100px;
+            
+        }
+
+        .user{
+            display: flex;
+            align-items: center;
+            .profile{
+                width: 50px;
+            }
+            label{
+                display: none;
+            }
+        }
+    }
+}
+//End header
+
+
+  
+        
+//sidebar
+   
+#showcase-sidebar{
+   
+    .sidebar{
+    background-color: $back_color;
+    height: 100%;
+    width: 75px;
+    position: fixed;
+        margin-top: -20px;
+    transition: .5s;
+      z-index: 1;
+      overflow-x: hidden;
+      white-space: nowrap;
+      
+  
+    #check-btn{
+     margin-top: 10px;
+        margin-left: 22px;
+      display: inline-block;
+      width: 25px;
+        transition: .5s;
+     &:hover{
+         width: 30px;
+     }
+
+    }
+
+    .content{ 
+        padding:10px;
+        line-height: 70px;
+    
+  
+        a{
+           
+           
+            display: block;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: $primary_color;
+            font-family: $primary_font;
+            
+            
+            .icons{
+    
+                img{
+                   width: 20px; 
+                   margin-left: 15px;
+                }
+                
+            }
+            span{
+                margin-left: 29px;
+            }
+
+            &:hover{
+                background-color: #a6b0bb;
+            }
+        }
+    }
+}
+
+}
+//End sidebar
+
+//main
+#main{
+    width: 90%;
+    transition: 0.5s;
+    margin-left: 57px;
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        .content{
+           font-family: $primary_font;
+            max-width: 600px;
+            margin: 0 auto;
+            .btn{
+                display: block;
+                margin-bottom: 30px;
+                height: 38px;
+                font-family: $primary_font;
+                 width: 100%;
+                 max-width: 600px;
+                 border: 0;
+                 padding-left: 10px;
+                 border-radius: 5px;
+                 outline: none !important;
+                 font-size: 1em;
+            }
+
+            .prix-btn{
+                width: 100px;
+                display: inline-block;
+                margin-right: 45px;
+                
+            }
+            
+            label{
+                display: block;
+                margin-bottom: 8px;
+                margin-left: 4px;
+                opacity: .5;
+                color: $primary_color;
+                font-size: 1em;
+                font-weight: bold;
+            }
+            ::-webkit-input-placeholder{
+                color: $back_color;
+                opacity: .8;
+                font-family: $primary_font;
+                font-weight: 10;
+            }
+            
+
+            
+            .submit-btn{
+                font-size: 1.5em;
+                padding:10px 50px;
+                margin-top: 20px;
+                border: 0;
+                background-color: $primary_color;
+                color: white;
+                border-radius: 8px;
+                float: right;
+                transition: .3s;
+                &:hover{
+                    color: $primary_color;
+                    background-color: white;
+                }
+            }
+                
+            
+
+        }
+    }
+}
+
+// End main

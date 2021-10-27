@@ -1,0 +1,443 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-size: "Montserrat", "poppins", Arial;
+}
+
+#check:checked ~ #wrapper {
+  margin-left: -17%;
+}
+
+#check:checked ~ #wrapper .sidebar .content {
+  margin-left: 82%;
+}
+
+#check:checked ~ #wrapper .sidebar .content span {
+  display: none;
+}
+
+#check:checked ~ #wrapper .sidebar .content .icons {
+  padding: 5px;
+  margin-left: 7px;
+}
+
+#check {
+  display: none;
+}
+
+#showcase-header {
+  background-color: #CED4DA;
+  padding: 13px 0;
+  font-family: "Montserrat", "poppins", Arial;
+}
+
+#showcase-header .container {
+  width: 98%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#showcase-header .container label #sidebar-btn {
+  color: #28272c;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#showcase-header .container label #sidebar-btn:hover {
+  color: #fff;
+}
+
+#showcase-header .container .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#showcase-header .container .user .N-admin {
+  color: #28272c;
+  font-size: 1.5em;
+}
+
+#showcase-header .container .user .profile {
+  margin-right: 10px;
+  width: 50px;
+}
+
+#showcase-header .container .logo {
+  width: 158px;
+  height: 53px;
+}
+
+#showcase-header .container span {
+  color: #28272c;
+  font-size: 1.2em;
+}
+
+#showcase-header .container form {
+  width: 50%;
+  height: 40px;
+}
+
+#showcase-header .container form img {
+  width: 15px;
+  position: absolute;
+  padding: 13px 0;
+  margin-left: 10px;
+}
+
+#showcase-header .container form .search {
+  width: 60%;
+  height: 40px;
+  padding-left: 30px;
+  border: 10px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Montserrat", "poppins", Arial;
+  color: #28272c;
+}
+
+#showcase-header .container form .search:focus {
+  outline: none;
+}
+
+#wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+  height: 91vh;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#wrapper .sidebar {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 8;
+  grid-row: 1/9;
+  background-color: #CED4DA;
+  font-size: 1.5em;
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrapper .sidebar .content {
+  margin-left: 10px;
+}
+
+#wrapper .sidebar .content a {
+  display: block;
+  color: #28272c;
+  font-weight: bold;
+  line-height: 80px;
+  text-decoration: none;
+  font-family: "Montserrat", "poppins", Arial;
+  font-size: 0.8em;
+}
+
+#wrapper .sidebar .content a span {
+  margin-left: 10px;
+}
+
+#wrapper .sidebar .content a .icons img {
+  width: 30px;
+}
+
+#wrapper .sidebar .content a:hover {
+  background-color: #c2c7cc;
+  opacity: 100%;
+}
+
+#wrapper .main-header {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 9;
+  grid-column: 3/12;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 80%;
+}
+
+#wrapper .main-header h1 {
+  font-family: "Montserrat", "poppins", Arial;
+  font-size: 3em;
+  color: #28272c;
+  margin: 25px;
+}
+
+#wrapper .main-header h1::after {
+  content: "Aperçu des statistiques";
+  color: gray;
+  opacity: 50%;
+  font-size: .6em;
+}
+
+#wrapper .main-header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ced4da5e;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+#wrapper .main-header div label {
+  margin-left: 66px;
+  color: #949393;
+  font-family: "Montserrat", "poppins", Arial;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#wrapper .main-header div img {
+  position: absolute;
+  width: 30px;
+  margin-left: 30px;
+}
+
+#wrapper .card1 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  background-color: #394959;
+  border-radius: 20px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: end;
+  height: 100%;
+}
+
+#wrapper .card1 img {
+  width: 25%;
+  margin: 20px;
+}
+
+#wrapper .card1 .content h2 {
+  margin-right: 20px;
+  color: white;
+  font-family: "Montserrat", "poppins", Arial;
+  font-size: 300%;
+}
+
+#wrapper .card1 .content p {
+  margin-right: 20px;
+  color: white;
+  font-family: "Montserrat", "poppins", Arial;
+  margin-bottom: 30px;
+  font-size: 100%;
+}
+
+#wrapper .card1 .content input {
+  margin-right: 20px;
+  background-color: white;
+  color: #28272c;
+  font-family: "Montserrat", "poppins", Arial;
+  font-weight: bold;
+  font-size: 100%;
+  padding: 10px 40px;
+  border: 3px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#wrapper .card1 .content input:hover {
+  background-color: transparent;
+  color: white;
+}
+
+#wrapper .card2 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-column: 6/9;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  background-color: #394959;
+  border-radius: 20px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: end;
+  height: 100%;
+}
+
+#wrapper .card2 img {
+  width: 25%;
+  margin: 20px;
+}
+
+#wrapper .card2 .content h2 {
+  margin-right: 20px;
+  color: white;
+  font-family: "Montserrat", "poppins", Arial;
+  font-size: 3em;
+}
+
+#wrapper .card2 .content p {
+  margin-right: 20px;
+  color: white;
+  font-family: "Montserrat", "poppins", Arial;
+  margin-bottom: 30px;
+}
+
+#wrapper .card2 .content input {
+  margin-right: 20px;
+  background-color: white;
+  color: #28272c;
+  font-family: "Montserrat", "poppins", Arial;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 10px 40px;
+  border: 3px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#wrapper .card2 .content input:hover {
+  background-color: transparent;
+  color: white;
+}
+
+#wrapper .card3 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 3;
+  grid-column: 9/12;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  background-color: #394959;
+  border-radius: 20px;
+  margin: 10px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: end;
+}
+
+#wrapper .card3 img {
+  width: 25%;
+  margin: 20px;
+}
+
+#wrapper .card3 .content h2 {
+  margin-right: 20px;
+  color: white;
+  font-family: "Montserrat", "poppins", Arial;
+  font-size: 3em;
+}
+
+#wrapper .card3 .content p {
+  margin-right: 20px;
+  color: white;
+  font-family: "Montserrat", "poppins", Arial;
+  margin-bottom: 30px;
+}
+
+#wrapper .card3 .content input {
+  margin-right: 20px;
+  background-color: white;
+  color: #28272c;
+  font-family: "Montserrat", "poppins", Arial;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 10px 40px;
+  border: 3px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#wrapper .card3 .content input:hover {
+  background-color: transparent;
+  color: white;
+}
+
+#wrapper .order {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 9;
+  grid-column: 3/12;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 4;
+  grid-row: 5/9;
+  margin-top: 50px;
+  overflow-x: auto;
+}
+
+#wrapper .order table {
+  font-family: "Montserrat", "poppins", Arial;
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 80%;
+}
+
+#wrapper .order td, #wrapper .order th {
+  border: 1px solid #CED4DA;
+  text-align: left;
+  padding: 8px;
+}
+
+#wrapper .order tr:nth-child(even) {
+  background-color: #ced4da77;
+}
+
+#wrapper .order .order--img {
+  width: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrapper > div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/*# sourceMappingURL=dashboard.css.map */
